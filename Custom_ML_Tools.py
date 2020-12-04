@@ -10,7 +10,7 @@ st.title("Preview Dataset")
 
 df = None
 if st.checkbox("Upload Dataset"):
-    csv_file = st.file_uploader("Upload '.CSV File'", type = ["csv"])
+    csv_file = st.file_uploader("Upload '.CSV File'", type=["csv"])
     if csv_file is not None:
         st.write(type(csv_file))
         df = pd.read_csv(csv_file)
@@ -46,7 +46,7 @@ if st.checkbox("Upload Dataset"):
         for i in range(len(columns)):
             if colm == columns[i]:
                 st.write(df[columns[i]])
-                chart_data = pd.DataFrame(df[:40], columns = [columns[i]])
+                chart_data = pd.DataFrame(df[:40], columns=[columns[i]])
                 st.area_chart(chart_data)
 
         barchart = st.bar_chart(df[columns])
