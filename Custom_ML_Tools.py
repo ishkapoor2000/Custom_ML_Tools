@@ -10,7 +10,7 @@ st.title("Preview Dataset")
 
 menu = ["Home", "Upload Dataset", "About"]
 choice = st.sidebar.selectbox("Menu:", menu)
-data = pd.read_csv('Sample100.csv')
+df = pd.read_csv('Sample100.csv')
 
 if choice == "Home":
         st.write("***\
