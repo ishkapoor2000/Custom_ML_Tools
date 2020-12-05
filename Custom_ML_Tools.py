@@ -10,6 +10,7 @@ st.title("Preview Dataset")
 
 menu = ["Home", "Upload Dataset", "About"]
 choice = st.sidebar.selectbox("Menu:", menu)
+data = pd.read_csv('Sample-Spreadsheet-5000-rows.csv')
 
 if choice == "Home":
         st.write("***\
@@ -17,7 +18,7 @@ if choice == "Home":
                  ***")
 
 elif choice == "Upload Dataset":
-    df = None
+    # df = None
     st.subheader("Upload Dataset")
     if st.checkbox("Upload Dataset"):
         csv_file = st.file_uploader("Upload '.CSV File'/'.xlsx File'", type=["csv", "xlsx"])
