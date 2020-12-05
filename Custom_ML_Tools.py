@@ -66,6 +66,6 @@ elif choice == "Upload Dataset":
 else:
     st.write("***\
              Creator: ISH KAPOOR\
-             ***)
+             ***")
 
     st.write("View GitHub Repo: 'https://github.com/ishkapoor2000/Custom_ML_Tools'")
