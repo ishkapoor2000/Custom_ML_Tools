@@ -63,7 +63,7 @@ elif choice == "Upload Dataset":
             barchart = st.bar_chart(df[columns])
             linechart = st.line_chart(df)
         else:
-		if st.checkbox("Preview Dataset"):
+            if st.checkbox("Preview Dataset"):
                 data = df
                 if st.button("HEAD"):
                     st.write(data.head(50))
